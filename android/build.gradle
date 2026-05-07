@@ -6,6 +6,7 @@ def safeExtGet(prop, fallback) {
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'fr.michaelvilleneuve.customcrop'
     compileSdkVersion safeExtGet('compileSdkVersion', 35)
 
     defaultConfig {
