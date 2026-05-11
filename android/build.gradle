@@ -26,9 +26,9 @@ repositories {
 }
 
 dependencies {
-    // OpenCV 4.11+ is the first release whose Maven Central binaries are
-    // 16 KB-aligned (libopencv_java4.so), satisfying Google Play's Android
-    // 15+ page-size requirement. 4.10.0 still shipped 4 KB-aligned binaries.
-    implementation 'org.opencv:opencv:4.11.0'
+    // OpenCV 4.12.0 (July 2025) added 16 KB-aligned `libopencv_java4.so` to
+    // its Android Maven publication. 4.10 and 4.11 still shipped 4 KB-aligned
+    // LOAD segments and were rejected by Android 15+'s page-size check.
+    implementation 'org.opencv:opencv:4.12.0'
     implementation 'com.facebook.react:react-native:+'
 }
