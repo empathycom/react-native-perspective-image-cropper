@@ -30,7 +30,7 @@ public class RNCustomCropModule extends ReactContextBaseJavaModule {
 
     public RNCustomCropModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        OpenCVLoader.initDebug();
+        OpenCVLoader.initLocal();
         this.reactContext = reactContext;
     }
 
